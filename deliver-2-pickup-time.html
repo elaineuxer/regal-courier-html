@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regal Courier 本地速遞 國際物流</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=414, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content=" ">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="regal-style.css?v=0007" rel="stylesheet">
+
+<style type="text/css">
+
+
+
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WVQ9FVS');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WVQ9FVS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="wrap">
+	<div class="header">
+		<h1>Regal Courier<br>本地速遞 國際物流</h1>
+		<a href="pickup-1-company-info.html"></a>
+
+	</div>
+
+<section>
+	<h2>預約送件</h2>
+	<div class="panel">
+		<input type="text" placeholder="委託公司名稱" disabled="">
+
+	</div>
+</section>
+
+<section>
+	<h3>送件詳情</h3>
+	<div class="panel">
+		<div class="col">
+			<div class="date-picker">
+	  			<input type="date" id="pickup-date" name="pickup-date" placeholder="日期">
+			</div>
+
+			<div class="radio-tabs">
+				  <input type="radio" id="tab1" name="tabs" checked>
+				  <label for="tab1">上午</label>
+				  
+				  <input type="radio" id="tab2" name="tabs">
+				  <label for="tab2">下午</label>			 
+			</div>
+		</div>
+
+		<div class="col">
+			<div>
+				<div class="checkbox-group">
+				  <input type="checkbox" id="checkbox1">
+				  <label for="checkbox1">特快急件</label>
+
+				  <input type="checkbox" id="checkbox2">
+				  <label for="checkbox2">急件</label>
+				</div>
+			</div>
+
+			<div class="checkbox-group">
+			<input type="checkbox" id="toggleCheckbox">
+		 	<label for="toggleCheckbox">指定時間</label>
+			  <div id="content-timepicker">			    
+				<input type="time" id="pickup-time">
+		 	</div> 
+
+		  <script>
+		    const checkbox = document.getElementById('toggleCheckbox');
+		    const content = document.getElementById('content-timepicker');
+
+		    checkbox.addEventListener('change', () => {
+		      content.style.display = checkbox.checked ? 'block' : 'none';
+		    });
+		  </script>
+
+		</div>
+
+		
+
+
+
+
+</div>
+
+</section>
+
+<section>
+		<ul class="remark">			
+			<li>*特快急件 2 小時內 (收>送) ( 包括2個地址 ) $130.00</li>
+			<li>*急件 3.5 小時內完成 (收>送)  (包括2個地址 ) $80.00</li>
+		</ul>	
+</section>
+
+
+<a href="deliver-3-location.html" class="btn-next">下一步</a>
+<a href="deliver-1-company-info.html" class="btn-back">上一步</a>
+
+</div>
+</body>
+</html>

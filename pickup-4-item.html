@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regal Courier 本地速遞 國際物流</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=414, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content=" ">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="regal-style.css?v=0001" rel="stylesheet">
+
+<style type="text/css">
+
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WVQ9FVS');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WVQ9FVS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="wrap">
+	<div class="header">
+		<h1>Regal Courier<br>本地速遞 國際物流</h1>
+		<a href="pickup-1-company-info.html"></a>
+
+	</div>
+
+<section>
+	<h2>預約取件</h2>
+	<h3>委託公司</h3>
+	<div class="panel">
+
+		<input type="text" placeholder="委託公司名稱" disabled="">
+
+	</div>
+</section>
+
+
+		<section>
+		<h3>取件詳情</h3>
+
+		<div class="panel">
+			<b>內附</b>
+			<div class="col">
+
+			  <div class="row checkbox-group">		  	
+					<input type="checkbox" id="checkbox5"  class="row-checkbox">
+					<label for="checkbox5">支票</label>
+						<div class="input-group">
+							<span class="suffix">張</span>
+							<input type="number" class="row-input" disabled placeholder=" ">
+						</div>
+			  </div>
+
+			  <div class="row checkbox-group">
+			   <input type="checkbox" id="checkbox6" class="row-checkbox">
+			    <label for="checkbox6">貨品</label>
+						<div class="input-group">
+							<span class="suffix">件</span>
+							<input type="number" class="row-input" disabled placeholder=" ">
+						</div>
+				</div>
+
+			 
+
+			  <div class="row checkbox-group">
+			   <input type="checkbox" id="checkbox7" class="row-checkbox">
+			    <label for="checkbox7">簽收單</label>
+						<div class="input-group">
+							<span class="suffix">張</span>
+							<input type="number" class="row-input" disabled placeholder=" ">
+						</div>
+				</div>
+
+				<div class="row checkbox-group">		  	
+					<input type="checkbox" id="checkbox8"  class="row-checkbox">
+					<label for="checkbox8">收條</label>
+						<div class="input-group">
+							<span class="suffix">張</span>
+							<input type="number" class="row-input" disabled placeholder=" ">
+						</div>
+			  	</div>
+
+			   
+			  <div class="row checkbox-group">		  	
+					<input type="checkbox" id="checkbox9"  class="row-checkbox">
+					<label for="checkbox9">船單</label>
+						<div class="input-group">
+							<span class="suffix">張</span>
+							<input type="number" class="row-input" disabled placeholder=" ">
+						</div>
+			  	</div>  			  
+			</div>
+			<div class="row-container">
+				<div class="row checkbox-group">
+				   <input type="checkbox" id="checkbox10" class="row-checkbox">
+				    <label for="checkbox10">其他</label>
+							<div class="input-group">
+								<span class="suffix"> </span>
+								<input type="text" class="row-input" disabled placeholder=" ">
+							</div>
+					</div>
+			</div>
+
+			<div class="select-group">
+			  <label for="dropdown">重量/尺碼</label>
+			  <select id="dropdown" name="options">
+			    <option value="1">1kg以下免收費</option>
+			    <option value="2">(每公斤$15.00) 1.1-5kgs </option>
+			    <option value="3">(每公斤$18.00) 5.1kgs以上 </option>
+			  </select>
+		</div>
+	
+
+
+</div>
+</section>
+
+<section>
+		<ul class="remark">			
+			<li>註:託運的速遞品 , 須參照本公司的附運條例.</li>
+		</ul>	
+</section>
+
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", () => {
+  const checkboxes = document.querySelectorAll(".row-checkbox");
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", (e) => {
+      const inputField = e.target.closest(".row").querySelector(".row-input");
+      inputField.disabled = !e.target.checked;
+    });
+  });
+});
+
+</script>
+
+
+
+
+<a href="pickup-5-confirmation.html" class="btn-next">下一步</a>
+<a href="pickup-3-location.html" class="btn-back">上一步</a>
+
+</div>
+</body>
+</html>

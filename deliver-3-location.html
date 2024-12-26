@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regal Courier 本地速遞 國際物流</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=414, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content=" ">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="regal-style.css?v=0001" rel="stylesheet">
+
+<style type="text/css">
+
+
+
+
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WVQ9FVS');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WVQ9FVS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="wrap">
+	<div class="header">
+		<h1>Regal Courier<br>本地速遞 國際物流</h1>	
+		<a href="pickup-1-company-info.html"></a>
+
+	</div>
+
+<section>
+	<h2>預約送件</h2>
+	<h3>委託公司</h3>
+	<div class="panel">
+
+		<input type="text" placeholder="委託公司名稱" disabled="">
+
+	</div>
+</section>
+
+<section>
+	<h3>送件詳情</h3>
+			<div class="radio-tabs">
+			  <input type="radio" id="tab1" name="tabs" checked>
+			  <label for="tab1">香港</label>
+			  
+			  <input type="radio" id="tab2" name="tabs">
+			  <label for="tab2">內地</label>
+			  
+			  <input type="radio" id="tab3" name="tabs">
+			  <label for="tab3">澳門</label>
+			</div>
+
+			<div class="searchable-dropdown">
+			  <input type="text" id="search-input" placeholder="地區">
+			  <ul id="options-list">
+			    <li>Location 1</li>
+			    <li>Location 2</li>
+			    <li>Location 3</li>
+			    <li>Location 4</li>
+			  </ul>
+			</div>
+
+			<script type="text/javascript">
+				document.addEventListener("DOMContentLoaded", () => {
+				  const searchInput = document.getElementById("search-input");
+				  const optionsList = document.getElementById("options-list");
+				  const options = Array.from(optionsList.querySelectorAll("li"));
+
+				  // Show the options list when the input is focused
+				  searchInput.addEventListener("focus", () => {
+				    optionsList.style.display = "block";
+				  });
+
+				  // Hide the options list when clicking outside the dropdown
+				  document.addEventListener("click", (e) => {
+				    if (!e.target.closest(".searchable-dropdown")) {
+				      optionsList.style.display = "none";
+				    }
+				  });
+
+				  // Filter options based on input value
+				  searchInput.addEventListener("input", () => {
+				    const query = searchInput.value.toLowerCase();
+				    options.forEach((option) => {
+				      if (option.textContent.toLowerCase().includes(query)) {
+				        option.style.display = "block";
+				      } else {
+				        option.style.display = "none";
+				      }
+				    });
+				  });
+
+				  // Handle option selection
+				  options.forEach((option) => {
+				    option.addEventListener("click", () => {
+				      searchInput.value = option.textContent;
+				      optionsList.style.display = "none";
+				    });
+				  });
+				});
+
+			</script>
+
+</section>
+
+
+
+
+<a href="deliver-4-item.html" class="btn-next">下一步</a>
+<a href="deliver-2-pickup-time.html" class="btn-back">上一步</a>
+
+</div>
+</body>
+</html>
